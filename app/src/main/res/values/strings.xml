@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EcommerceAdminApp01</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_name_level">Product Name</string>
+    <string name="purchase_price_level">Purchase Price</string>
+    <string name="sale_price_level">Sale Price</string>
+    <string name="product_description_level">Product Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="select_category_level">Select Category</string>
+    <string name="select_date_button_text">Select Date</string>
+    <string name="product_image_level">Product Image</string>
+    <string name="click_to_capture_button_text">Click to Capture</string>
+    <string name="add_product_button_text">Add Product</string>
+    <string name="no_item_found_text">No Item Found</string>
+    <string name="product_description_tv_text">This is a brand new 3 inch digital smart watch</string>
+    <string name="purchase_history_level_text">Purchase History</string>
+</resources>
