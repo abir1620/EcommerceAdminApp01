@@ -11,8 +11,13 @@
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_category.xml" value="0.1" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_dashboard.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_order.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_order_list.xml" value="0.18" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_product_details.xml" value="0.18235294117647058" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_report.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_settings.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/fragment_view_product.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/order_row.xml" value="0.32335329341317365" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/product_row.xml" value="0.22" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/round_border_edittext.xml" value="0.17028985507246377" />
         <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceAdminApp01/app/src/main/res/layout/round_button_edittext.xml" value="0.271875" />

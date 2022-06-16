@@ -47,7 +47,11 @@ class DashboardFragment : Fragment() {
         when(it){
             DashboardItemType.ADD_PRODUCT -> findNavController().navigate(R.id.action_dashboardFragment_to_addProductFragment)
             DashboardItemType.VIEW_PRODUCT -> findNavController().navigate(R.id.action_dashboardFragment_to_viewProductFragment)
+            DashboardItemType.ORDER -> findNavController().navigate(R.id.action_dashboardFragment_to_orderFragment)
             DashboardItemType.CATEGORY -> findNavController().navigate(R.id.action_dashboardFragment_to_categoryFragment)
+            DashboardItemType.REPORT -> findNavController().navigate(R.id.action_dashboardFragment_to_reportFragment)
+            DashboardItemType.USER -> findNavController().navigate(R.id.action_dashboardFragment_to_manageUserFragment)
+            DashboardItemType.SETTINGS -> findNavController().navigate(R.id.action_dashboardFragment_to_settingsFragment)
         }
     }
 

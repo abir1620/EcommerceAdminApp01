@@ -15,4 +15,8 @@
     <string name="no_item_found_text">No Item Found</string>
     <string name="product_description_tv_text">This is a brand new 3 inch digital smart watch</string>
     <string name="purchase_history_level_text">Purchase History</string>
+    <string name="user_id_level_text">User Id</string>
+    <string name="order_id_level_text">Order Id</string>
+    <string name="user_name_level_text">User Name</string>
+    <item name="delivery_date_tv" type="id" />
 </resources>

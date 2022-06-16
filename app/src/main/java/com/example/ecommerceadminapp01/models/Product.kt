@@ -11,5 +11,10 @@ data class Product(
     var rating: Double = 0.0
 
 
-
 )
+
+
+
+
+
+

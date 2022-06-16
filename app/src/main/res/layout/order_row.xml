@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="order"
+            type="com.example.ecommerceadminapp01.models.Order" />
+        
+        <variable
+            name="order_details"
+            type="com.example.ecommerceadminapp01.models.OrderDetails" />
+    </data>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#F3DFDF"
+            >
+
+            <TextView
+                android:id="@+id/user_id_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="User Id  "
+                android:text="@string/user_id_level_text"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10001"
+                android:text="@{order.userId}"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/user_id_level"
+                app:layout_constraintTop_toTopOf="@id/user_id_level" />
+
+            <TextView
+                android:id="@+id/order_id_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_id_level"
+                tools:text="Order Id"
+                android:text="@string/order_id_level_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/order_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/order_id_level"
+                app:layout_constraintTop_toTopOf="@id/order_id_level"
+                tools:text="520001"
+                android:text="@{order.orderId}"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/delivery_date_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/delivery_date_tv"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Order Date "
+                android:textSize="12sp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/delivery_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="19/11/2022"
+                android:text="@{order.o"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/delivery_address_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/order_id_level"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Delivery Address"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/delivery_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Shukrabad, Dhaka"
+                android:text="@{order.deliveryAddress}"
+                app:layout_constraintStart_toEndOf="@id/delivery_address_level"
+                app:layout_constraintTop_toTopOf="@id/delivery_address_level"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                />
+
+           <View
+               android:id="@+id/view1"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#ff22"
+               app:layout_constraintTop_toBottomOf="@id/delivery_address_level"
+               android:layout_marginTop="10dp"
+               />
+
+            <TextView
+                android:id="@+id/orders_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Orders"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/product_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/orders_level"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="1 Smart Televison"
+                android:text="@{order_details.productId}"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/product_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_id_tv"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@{order_details.productName}"
+
+                />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -22,6 +22,18 @@
         <action
             android:id="@+id/action_dashboardFragment_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_manageUserFragment"
+            app:destination="@id/manageUserFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -52,4 +64,24 @@
         android:name="com.example.ecommerceadminapp01.ProductDetailsFragment"
         android:label="Product Details"
         tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.ecommerceadminapp01.views.OrderListFragment"
+        android:label="View Orders"
+        tools:layout="@layout/fragment_order_list" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.ecommerceadminapp01.views.ReportFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/manageUserFragment"
+        android:name="com.example.ecommerceadminapp01.views.ManageUserFragment"
+        android:label="Manage Users"
+        tools:layout="@layout/fragment_manage_user" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ecommerceadminapp01.views.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
