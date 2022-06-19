@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceadminapp01.databinding.OrderRowBinding
 import com.example.ecommerceadminapp01.models.Order
-import com.example.ecommerceadminapp01.models.OrderDetails
 
 class OrderAdapter(val callback : (String) -> Unit) : ListAdapter<Order,OrderAdapter.OrderViewHolder>(OrderDiffUtil()) {
 

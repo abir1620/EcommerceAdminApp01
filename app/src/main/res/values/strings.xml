@@ -18,5 +18,17 @@
     <string name="user_id_level_text">User Id</string>
     <string name="order_id_level_text">Order Id</string>
     <string name="user_name_level_text">User Name</string>
+    <string name="order_details_tv_text">Order Details</string>
+    <string name="delivery_address_level_tv_text">Delivery Address</string>
+    <string name="product_id_level_text">Product Id</string>
+    <string name="product_name_level_text">Product Name</string>
+    <string name="product_quantity_level_text">Product Quantity</string>
+    <string name="product_price_level_text">Product Price</string>
+    <string name="user_phone_number_level">User Mobile</string>
+    <string name="user_email_level_text">User Email</string>
+    <string name="user_creation_date_level_text">User Creation Date</string>
+    <string name="user_address_level_text">User Address</string>
+    <string name="user_last_sign_in_level_text">User Last Sign In Time</string>
+    <string name="user_last_app_exit_time_level_text">User Last App Exit Time</string>
     <item name="delivery_date_tv" type="id" />
 </resources>

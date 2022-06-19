@@ -42,25 +42,24 @@ class OrderRepository {
         return orderLD
     }
 
-    //Combine order and order details model
-    //and pass the new model class in the adapter
+ fun getOrderDetails(orderId: String) : LiveData<List<OrderDetails>>{
 
-    fun getOrderDetails() : LiveData<List<OrderDetails>>{
-        val orderDetailsLD = MutableLiveData<List<OrderDetails>>()
-        db.collection(collectionOrderDetails)
-            .addSnapshotListener { value, error ->
-                if(error != null){
-                    return@addSnapshotListener
-                }
-                val tempList = mutableListOf<OrderDetails>()
-                for(doc in value!!.documents){
-                    doc.toObject(OrderDetails::class.java)?.let{tempList.add(it)}
-                }
-                orderDetailsLD.value = tempList
-            }
-        return orderDetailsLD
-    }
-
+     val orderDetailsLD = MutableLiveData<List<OrderDetails>>()
+     db.collection(collectionOrder)
+         .document(orderId)
+         .collection(collectionOrderDetails)
+         .addSnapshotListener { value, error ->
+             if(error != null){
+                 return@addSnapshotListener
+             }
+             val tempList = mutableListOf<OrderDetails>()
+             for(doc in value!!.documents){
+                 doc.toObject(OrderDetails::class.java)?.let{tempList.add(it)}
+             }
+             orderDetailsLD.value = tempList
+         }
+     return orderDetailsLD
+ }
 
 
 

@@ -37,7 +37,7 @@ class AddProductFragment : Fragment() {
     ): View? {
         binding= FragmentAddProductBinding.inflate(inflater,container,false)
         //select category
-        productViewModel.getCategories().observe(viewLifecycleOwner){
+        productViewModel.getAllCategories().observe(viewLifecycleOwner){
             if(!it.isNullOrEmpty()){
                 //If it not null or Empty we will create adapter
                 val adapter = ArrayAdapter<String>(requireActivity(),

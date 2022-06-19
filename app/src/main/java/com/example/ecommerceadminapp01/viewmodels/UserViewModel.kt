@@ -11,4 +11,6 @@ class UserViewModel : ViewModel() {
 
 
     fun getUser(userId: String) =userRepository.getUser(userId)
+
+    fun getAllUser() = userRepository.getAllUser()
 }

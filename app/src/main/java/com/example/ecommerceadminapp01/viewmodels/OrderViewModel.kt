@@ -12,7 +12,6 @@ class OrderViewModel: ViewModel() {
 
 
     fun getAllOrder() = orderRepository.getAllOrder()
-
-    fun getOrderDetails()=orderRepository.getOrderDetails()
+    fun getOrderDetails(orderId: String) = orderRepository.getOrderDetails(orderId)
 
 }

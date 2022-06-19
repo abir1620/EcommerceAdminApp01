@@ -42,7 +42,7 @@ class ProductViewModel : ViewModel() {
     fun getPurchaseByProductId(id: String) = repository.getPurchaseHistoryByProductId(id)
     //These methods returns live data object
     //Now we will observe them from ProductDetailsFragment
-    fun getCategories() = repository.getAllCategories()
+    fun getAllCategories() = repository.getAllCategories()
     fun uploadImage(bitmap: Bitmap, callback: (String) -> Unit) {
         val photoRef = FirebaseStorage.getInstance().reference
             .child("images/${System.currentTimeMillis()}")
